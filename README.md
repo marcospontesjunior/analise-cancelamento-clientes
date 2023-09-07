@@ -5,7 +5,7 @@
 
 ### Sobre:
 
-Este projeto visa analisar uma base de dados para verificar o perfil de cancelamento dos clientes.
+Este projeto visa analisar uma base de dados para verificar o perfil de cancelamento dos clientes. 
 
 ### Proposta:
 
