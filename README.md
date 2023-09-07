@@ -27,52 +27,52 @@ A proposta do projeto é extrair informações de uma base de dados em formato .
 
 ### Metodologia:
 
-Inicialmente, utilizamos a biblioteca Pandas para importar e ler a base de dados.
+Inicialmente, utilizamos a biblioteca **Pandas** para importar e ler a base de dados.
 
 <img src="/img/dados.png">
 
 ###
-O próximo passo foi realizar o tratamento e a limpeza dos dados. Utilizamos o método .info para verificar o tipo de dados com o qual estávamos trabalhando. Removemos as linhas que continham valores nulos e a coluna “CustomerID”. 
+O próximo passo foi realizar o tratamento e a limpeza dos dados. Utilizamos o método .info para verificar o tipo de dados com o qual estávamos trabalhando. Removemos as linhas que continham **valores nulos** e a coluna **“CustomerID”**. 
 
 <img src="/img/dados-info.png">
 
 ###
-Em seguida, realizamos uma análise para verificar a taxa de cancelamento. Utilizamos o método .value_counts() para obter a quantidade de cancelamentos e em seguida aplicamos o método .apply junto da função lambda parar formatar os valores e verificar os números em porcentagem. Para a identificação do “Cancelou” e “Não Cancelou” foi usado o tipo de dados booleano onde 1 corresponde a “Cancelou” e 0 corresponde a “Não Cancelou”. 
+Em seguida, realizamos uma análise para verificar a taxa de cancelamento. Utilizamos o método **.value_counts()** para obter a quantidade de cancelamentos e em seguida aplicamos o método **.apply** junto da função lambda parar formatar os valores e verificar os números em porcentagem. Para a identificação do **“Cancelou”** e **“Não Cancelou”** foi usado o tipo de dados **booleano** onde **1** corresponde a **“Cancelou”** e **0** corresponde a **“Não Cancelou”**.
 
 <img src="/img/dados-cancelamento.png">
 
 ###
-Verificamos que houve um total de 56.71% de cancelamento.
+Verificamos que houve um total de **56.71%** de cancelamento.
 
-Para ajudar na análise vamos para a criação de gráficos para melhor visualização. Foi utilizado a biblioteca Plotly com o método de repetição for.
+Para ajudar na análise vamos para a criação de gráficos para melhor visualização. Foi utilizado a biblioteca **Plotly** com o método de repetição **for**.
 
 ### Análise:
 
 A partir dos gráficos gerados, a análise destacou quatro fatores que podem ser relacionados ao cancelamento de clientes:
 
 ###
-- Idade:
+- <strong>Idade:</strong>
 
 <img src="/img/grafico-idade.png">
 
 Clientes com idade acima de 50 anos apresentam uma taxa de cancelamento mais elevada, sugerindo um desafio especifico em relação à retenção nessa faixa etária.
 
 ###
-- Ligação ao Call Center:
+- <strong>Ligação ao Call Center:</strong>
 
 <img src="/img/grafico-ligacao-callcenter.png">
 
 Observou-se que clientes que realizam mais de 5 ligações ao call center tem maior probabilidade de cancelar suas assinaturas. Isso pode sugerir que a insatisfação ou dificuldades enfrentadas pelos clientes ao entrar em contato com o suporte estão levando ao     cancelamento.
 
 ###
-- Dias de Atraso:
+- <strong>Dias de Atraso:</strong>
 
 <img src="/img/grafico-dias-atraso.png">
 
 Clientes que acumulam mais de 20 dias de atraso no pagamento estão inclinados a cancelar suas assinaturas. Esse padrão sugere que a inadimplência pode estar relacionada ao aumento do cancelamento de clientes.
 
 ###
-- Duração do Contrato:
+- <strong>Duração do Contrato:</strong>
 
 <img src="/img/grafico-duracao-contrato.png">
 
