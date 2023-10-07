@@ -3,7 +3,7 @@
 ###
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT) 
 
-### Sobre:
+### Sobre: 
 
 Este projeto visa analisar uma base de dados para verificar o perfil de cancelamento dos clientes. 
 
